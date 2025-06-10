@@ -1,0 +1,116 @@
+
+.ferris-page {
+  overflow: hidden;
+  height: 100vh;
+
+}
+
+.ferris-title {
+  font-family: 'Georgia', serif;
+  font-size: 32px;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  width: 100%; 
+  position: relative;
+}
+
+.wheel-container {
+  position: absolute;
+  left: -1300px;
+  top: 85%;
+  transform: translateY(-50%);
+  width: 1500px;
+  height: 1500px;
+  overflow: visible;
+}
+  
+  .wheel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 4px solid white;
+    border-radius: 50%;
+    animation: spin 40s linear infinite;
+  }
+  
+  .spoke {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    z-index: 1;
+  }
+  
+ .photo-holder {
+  position: absolute;
+  right: -120px; 
+  top: 50%;
+  transform: translateY(-50%);
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border: 3px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+.photo-holder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+    
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .spinning {
+  animation: spin 60s linear infinite;
+}
+
+.fullscreen-view {
+  display: flex;
+  padding: 40px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  animation: fadeIn 0.4s ease;
+}
+
+.fullscreen-view img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.photo-caption {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.close-button {
+  margin-top: 16px;
+  padding: 10px 20px;
+  border: none;
+  background: white;
+  color: #333;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+  
