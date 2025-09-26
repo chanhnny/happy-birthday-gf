@@ -32,7 +32,7 @@ export default function FerrisWheel() {
 
   return (
     <div className="ferris-page">
-      <h1 className="ferris-title">Our Love on a <br></br>Ferris Wheel</h1>
+      <h1 className="ferris-title">infinite loop <br></br> of love</h1>
 
       {selectedIndex === null ? (
         <div className="wheel-container">

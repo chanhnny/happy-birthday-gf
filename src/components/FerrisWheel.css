@@ -12,7 +12,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 40px;
+  padding: 25px;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   z-index: 10;
   width: 100%; 
@@ -71,7 +71,7 @@
   }
 
   .spinning {
-  animation: spin 60s linear infinite;
+  animation: spin 45s linear infinite;
 }
 
 .fullscreen-view {
